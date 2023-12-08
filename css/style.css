@@ -4,11 +4,28 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Gabriel Sans;
+    src: url('../fonts/GabrielSansTrialBd.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: sans-serif;
+}
+
+h1,h2,h3.h4,h5 {
+    font-family: Gabriel Sans;
+}
+
+p,a,i {
+    font-family: Poppins;
 }
 
 :root {
@@ -90,9 +107,10 @@ header.main .menu {
 }
 
 header nav a {
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 400;
+    color: #494848;
+    font-size: 1.4drem;
+    font-weight: 300;
+    font-family: Gabriel Sans;
 }
 
 header.main nav a {
