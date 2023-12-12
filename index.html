@@ -28,27 +28,64 @@
           <li><a href="services.html">SERVICIOS</a></li>
           <li><a href="contact.html">CONTACTO</a></li>
         </ul>
+        <i class="fa-solid fa-bars burguer-menu"></i>
       </nav>
     </header>
     <main>
-      <div class="container video">
-        <video loop autoplay>
-            <source src="img/home.mov" type="video/mp4">
+      <div class="container video" style="overflow: hidden; height: 100vh;">
+        <div class="fg"></div>
+        <video>
+          <source src="img/home.mov" type="video/mp4" />
         </video>
         <div class="content">
-            <figure>
-                <img src="img/logo_black-removebg-preview.png" alt="">
-            </figure>
-            <div class="content__bottom">
-                <div class="socials">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                <h2>Smartest Choice</h2>
+          <figure>
+            <img src="img/Logo home@2x.png" alt="" />
+          </figure>
+          <div class="content__bottom">
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
             </div>
+            <h2>Smartest Choice</h2>
+          </div>
         </div>
-        <a href="origin.html" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+        <a href="origin.html" class="next"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></a>
       </div>
     </main>
+    <script>
+      var video = document.querySelector("video");
+      var fg = document.querySelector(".fg");
+      var figure = document.querySelector("figure");
+
+      video.addEventListener("loadstart", function () {
+        video.loop = true;
+        video.muted = true;
+        setTimeout(function () {
+          fg.style.opacity = "0";
+          figure.style.opacity = "1";
+          video.play();
+        }, 1000);
+      });
+    </script>
+
+    <script>
+      var next = document.querySelector('.next');
+      var link = next.getAttribute('href');
+      next.removeAttribute('href');
+      var bodyContent = document.querySelector('body');
+      next.addEventListener("click", function () {
+        
+        // Ejecuta la animación
+        bodyContent.style.animation = 'slide 0.6s ease-in-out';
+        // Redirige al enlace de la etiqueta
+        setTimeout(function () {
+          window.location.href = link;
+        }, 400);
+      });
+       
+    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

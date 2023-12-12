@@ -17,22 +17,25 @@
     <title>Adminika</title>
   </head>
 
-  <body>
+  <body onload="slideIn()">
     <header>
-        <nav>
-          <ul class="menu">
-              <figure>
-                  <a href="index.html"><img src="img/logo_white-removebg-preview.png" alt="logo Adminika"></a>
-              </figure>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="origin.html">ORIGEN</a></li>
-            <li><a href="manifest.html">MANIFIESTO</a></li>
-            <li><a href="founders.html">LIDERES</a></li>
-            <li><a href="services.html">SERVICIOS</a></li>
-            <li class="active"><a href="contact.html">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <figure>
+          <a href="index.html"
+            ><img src="img/logo_white-removebg-preview.png" alt="logo Adminika"
+          /></a>
+        </figure>
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="origin.html">ORIGEN</a></li>
+          <li><a href="manifest.html">MANIFIESTO</a></li>
+          <li><a href="founders.html">LIDERES</a></li>
+          <li><a href="services.html">SERVICIOS</a></li>
+          <li class="active"><a href="contact.html">CONTACTO</a></li>
+        </ul>
+        <i class="fa-solid fa-bars burguer-menu"></i>
+      </nav>
+    </header>
     <main>
         <div class="container contact">
             <div class="top">
@@ -74,5 +77,13 @@
         </div>
       </div>
     </main>
+    <script>
+      var bodyContent = document.querySelector('body');
+      
+      function slideIn() {
+        bodyContent.style.animation = 'slideIn 0.3s ease-in-out'
+       }
+    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

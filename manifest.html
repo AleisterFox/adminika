@@ -17,59 +17,104 @@
     <title>Adminika</title>
   </head>
 
-  <body>
+  <body onload="slideIn()">
     <header>
-        <nav>
-          <ul class="menu">
-              <figure>
-                  <a href="index.html"><img src="img/logo_white-removebg-preview.png" alt="logo Adminika"></a>
-              </figure>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="origin.html">ORIGEN</a></li>
-            <li class="active"><a href="manifest.html">MANIFIESTO</a></li>
-            <li><a href="founders.html">LIDERES</a></li>
-            <li><a href="services.html">SERVICIOS</a></li>
-            <li><a href="contact.html">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <figure>
+          <a href="index.html"
+            ><img src="img/logo_white-removebg-preview.png" alt="logo Adminika"
+          /></a>
+        </figure>
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="origin.html">ORIGEN</a></li>
+          <li class="active"><a href="manifest.html">MANIFIESTO</a></li>
+          <li><a href="founders.html">LIDERES</a></li>
+          <li><a href="services.html">SERVICIOS</a></li>
+          <li><a href="contact.html">CONTACTO</a></li>
+        </ul>
+        <i class="fa-solid fa-bars burguer-menu"></i>
+      </nav>
+    </header>
     <main>
       <div class="container manifest">
-        <a href="founders.html" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+        <a href="founders.html" class="next"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></a>
 
         <div class="lists">
-            <ul>
-                <li>Tenemos el poder de crear la vida que deseamos<span>1</span></li>
-                <li>La gratitud mantiene las puertas abiertas<span>2</span></li>
-                <li>Ama lo que hacer<span>3</span></li>
-                <li>Ser coherente en cada palabra y acción<span>4</span></li>
-                <li>Da lo mejor, espera lo mejor<span>5</span></li>
-                <li>Jamás dejar de aprender<span>6</span></li>
-            </ul>
-            <ul>
-                <li>La fuerza mas poderosa del universo <br> es la voluntad<span>7</span></li>
-                <li>Enfocarse en el presente sin perder la visión hacia el futuro<span>8</span></li>
-                <li>La integridad es invaluable<span>9</span></li>
-                <li>Busca vivir en abundancia<span>10</span></li>
-                <li>Ser valiente es necesario, rendirse <br> no es una opción<span>11</span></li>
-                <li>Trascender, de eso se trata la vida<span>12</span></li>
-            </ul>
+          <ul>
+            <li>
+              Tenemos el poder de crear la vida que deseamos<span>1</span>
+            </li>
+            <li>La gratitud mantiene las puertas abiertas<span>2</span></li>
+            <li>Ama lo que hacer<span>3</span></li>
+            <li>Ser coherente en cada palabra y acción<span>4</span></li>
+            <li>Da lo mejor, espera lo mejor<span>5</span></li>
+            <li>Jamás dejar de aprender<span>6</span></li>
+          </ul>
+          <ul>
+            <li>
+              La fuerza mas poderosa del universo <br />
+              es la voluntad<span>7</span>
+            </li>
+            <li>
+              Enfocarse en el presente sin perder la visión hacia el futuro<span
+                >8</span
+              >
+            </li>
+            <li>La integridad es invaluable<span>9</span></li>
+            <li>Busca vivir en abundancia<span>10</span></li>
+            <li>
+              Ser valiente es necesario, rendirse <br />
+              no es una opción<span>11</span>
+            </li>
+            <li>Trascender, de eso se trata la vida<span>12</span></li>
+          </ul>
         </div>
         <div class="why">
-            <p>¿Por qué elegirnos?</p>
-            <div class="content">
-                <div class="reason">
-                    <p><strong>Personal certificado</strong> y con amplia experiencia para la administración de inmuebles</p>
-                </div>
-                <div class="reason">
-                    <p>Integración de procesos, lo que nos permite mantener altos <strong>estándares de calidad y servicio</strong></p>
-                </div>
-                <div class="reason">
-                    <p><strong>Atención personalizada de Condóminios 24/7.</strong> Atendiendo incidencias, quejas y requerimientos de condominios</p>
-                </div>
+          <p>¿Por qué elegirnos?</p>
+          <div class="content">
+            <div class="reason">
+              <p>
+                <strong>Personal certificado</strong> y con amplia experiencia
+                para la administración de inmuebles
+              </p>
             </div>
+            <div class="reason">
+              <p>
+                Integración de procesos, lo que nos permite mantener altos
+                <strong>estándares de calidad y servicio</strong>
+              </p>
+            </div>
+            <div class="reason">
+              <p>
+                <strong>Atención personalizada de Condóminios 24/7.</strong>
+                Atendiendo incidencias, quejas y requerimientos de condominios
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <script>
+      var next = document.querySelector(".next");
+      var link = next.getAttribute("href");
+      next.removeAttribute("href");
+      var bodyContent = document.querySelector("body");
+      next.addEventListener("click", function () {
+        // Ejecuta la animación
+        bodyContent.style.animation = "slide 0.6s linear";
+        // Redirige al enlace de la etiqueta
+        setTimeout(function () {
+          window.location.href = link;
+        }, 300);
+      });
+
+      function slideIn() {
+        bodyContent.style.animation = "slideIn 0.3s ease-in-out";
+      }
+    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

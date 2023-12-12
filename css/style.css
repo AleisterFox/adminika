@@ -20,6 +20,10 @@ html {
     overflow-x: hidden;
 }
 
+main {
+    width: 100vw;   
+}
+
 h1,h2,h3.h4,h5 {
     font-family: Gabriel Sans;
 }
@@ -83,6 +87,7 @@ header nav {
     justify-content: space-between;
     flex-wrap: nowrap;
     position: relative;
+    background-color: var(--creme);
 }
 
 header.main nav {
@@ -102,13 +107,21 @@ header.main nav {
     gap: 2rem;
 }
 
+.burguer-menu {
+    display: none;
+}
+
+header.main nav {
+    background-color: transparent;
+}
+
 header.main .menu {
     background-color: transparent;
 }
 
 header nav a {
     color: #494848;
-    font-size: 1.4drem;
+    font-size: 1.4rem;
     font-weight: 300;
     font-family: Gabriel Sans;
 }
@@ -149,11 +162,22 @@ header.main nav a {
 
 .container.video video {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     filter: brightness(50%);
+}
+
+.container.video .fg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
 }
 
 .container.video .content {
@@ -196,11 +220,15 @@ header.main nav a {
 
 .container.video figure {
     width: 80rem;
+    max-width: 90vw;
     height: 35rem;
+    opacity: 0.3;
 }
 
 .container.video img {
-    object-fit: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 /* ORIGEN */
@@ -288,6 +316,7 @@ header.main nav a {
     border-bottom: 3px solid lightgray;
     margin-bottom: 4rem;
     width: 50rem;
+    max-width: 90vw;
 }
 
 /* MANIFIESTO */
@@ -380,6 +409,7 @@ header.main nav a {
     justify-content: center;
     align-items: center;
     flex-basis: 35rem;
+    flex-grow: 1;
     height: 9rem;
     position: relative;
 }
@@ -718,6 +748,7 @@ button {
 
 .container.contact .bottom {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 10rem;
     justify-content: space-between;
     align-items: center;
@@ -727,6 +758,10 @@ button {
 .container.contact .bottom a {
     font-size: 1.4rem;
     color: white;
+}
+
+.container.contact .bottom>a {
+    flex-basis: 25rem;
 }
 
 .container.contact .bottom figure {
@@ -754,6 +789,10 @@ button {
     z-index: 10;
 }
 
+.next:hover {
+    cursor: pointer;
+}
+
 .next i {
     color: var(--gold);
     font-size: 3rem;
@@ -773,4 +812,124 @@ button {
 
 .container.services .next {
     top: 27vh;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(50%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:769px) {
+    .next {
+        top: 25%;
+    }
+    .burguer-menu {
+        display: block;
+        color: black;
+        font-size: 3rem;
+        margin-right: 3rem;
+    }
+
+    header.main .burguer-menu {
+        color: white;
+        margin: 0;
+    }
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: fit-content;
+        padding: 2rem 0;
+        display: none;
+    }
+    header.main .menu {
+        background-color: rgba(0, 0, 0, 0.75);
+       
+    }
+    
+    header figure {
+        width: 25rem;
+    }
+
+    .container.origin .left {
+        padding: 2rem;
+        height: fit-content;
+    }
+
+    .container.origin .right .next {
+        top: -100%;
+    }
+
+    .container.manifest .lists {
+        padding: 0 1rem;
+        padding-top: 10rem;
+    }
+
+    .lists ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lists li {
+        margin: 1rem 0rem;
+        height: fit-content;
+    }
+
+    .why {
+        padding: 0 4rem;
+        margin-top: 5rem;
+    }
+
+    .why .content {
+        row-gap: 2rem;
+    }
+
+    .container.founders .content {
+        padding: 0 1rem;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .container.founders .data  {
+        width: fit-content;
+    }
+
+    .container.services {
+        padding: 0;
+        padding-top: 27vh;
+    }
+
+    .top {
+        padding-left: 1rem;
+    }
+
+    .container.contact .bottom {
+        padding: 0 1rem;
+    }
+
+    .container.contact .bottom>a {
+        font-size: 1.8rem;
+        margin: 1rem 0rem;
+    }
 }
