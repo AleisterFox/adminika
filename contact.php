@@ -39,8 +39,8 @@
           <h2>Contáctanos hoy</h2>
           <h3>Deja tu mensaje y en breve <br> nos contactaremos contigo</h3>
           <div class="info">
-            <p><i class="fa-solid fa-envelope"></i>&nbsp; Contacto@adminika.com.mx</p>
-            <p><i class="fa-solid fa-phone"></i>&nbsp; Tel. 333 333 3333</p>
+            <a href="mailto:contacto@adminika.mx"><i class="fa-solid fa-envelope"></i>&nbsp; contacto@adminika.mx</a>
+            <p><i class="fa-solid fa-phone"></i>&nbsp; Tel. 664 505 9085</p>
             <p><i class="fa-solid fa-location-pin"></i>&nbsp; Tijuana, b.c México</p>
           </div>
         </div>

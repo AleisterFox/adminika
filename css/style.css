@@ -746,6 +746,7 @@ button {
     font-size: 1.8rem;
     max-width: 12rem;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 .container.contact h2 {
@@ -765,6 +766,12 @@ button {
     font-size: 1.8rem;
     margin: 2rem 0;
     color: white !important;
+}
+
+.container.contact a {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    color: white;
 }
 
 .container.contact .bottom {
