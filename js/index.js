@@ -8,3 +8,22 @@ burguerMenu.addEventListener('click', () => {
         navMenu.style.display = 'none';
     }
 });
+
+
+const services = document.querySelectorAll('.service');
+const fullServices = document.querySelectorAll('.full__service');
+
+
+services.forEach(service => {
+    service.addEventListener('mouseover', () => {
+        var currentClass = service.classList[1];
+        fullServices.forEach(fullService => {
+            if (fullService.classList.contains(currentClass)) {
+                fullService.classList.add('active');
+            }
+            fullService.addEventListener('mouseout', () => {
+                fullService.classList.remove('active');
+            });
+        });
+    });
+});

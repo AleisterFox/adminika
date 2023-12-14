@@ -24,11 +24,11 @@ main {
     width: 100vw;   
 }
 
-h1,h2,h3.h4,h5 {
-    font-family: Gabriel Sans;
+h1,h2,h3,h4,h5 {
+    font-family: Gabriel Sans, sans-serif;
 }
 
-p,a,i {
+p,a,i,li {
     font-family: Poppins;
 }
 
@@ -399,10 +399,11 @@ header.main nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 1rem;
+    gap: 5rem;
 }
 
 .why .reason {
-    
+
     color: #6e6e6e;
     font-size: 1.6rem;
     display: flex;
@@ -495,6 +496,7 @@ header.main nav a {
     flex-wrap: wrap;
     gap: 1rem;
     position: relative;
+    max-width: 100vw;
 }
 
 .container.services .service {
@@ -507,6 +509,12 @@ header.main nav a {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    max-width: 100vw;
+}
+
+.container.services .service a {
+    width: 100%;
+    height: 100%;
 }
 
 .service figure {
@@ -530,7 +538,9 @@ header.main nav a {
     height: 8rem;
     align-items: center;
     justify-content: center;
-    transform: translateX(-20%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
 }
 
 .wrapper h3 {
@@ -569,13 +579,22 @@ header.main nav a {
     display: none;
 }
 
+.wrapper .full__service .content {
+    position: static;
+    margin-left: 16%;
+}
+
+.full__service.active {
+    display: block;
+}
+
 .full__service::after {
     content: "";
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -619,10 +638,11 @@ header.main nav a {
     width: 100%;
     padding: 0 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: #494848;
     font-size: 2rem;
-    margin-top: 10%;
+    margin-top: 10rem;
 }
 
 .full__service .bottom p {
@@ -744,6 +764,7 @@ button {
 .container.contact p {
     font-size: 1.8rem;
     margin: 2rem 0;
+    color: white !important;
 }
 
 .container.contact .bottom {
@@ -931,5 +952,9 @@ button {
     .container.contact .bottom>a {
         font-size: 1.8rem;
         margin: 1rem 0rem;
+    }
+
+    .wrapper .full__service .content {
+        margin-left: 50%;
     }
 }

@@ -17,28 +17,28 @@
     <title>Adminika</title>
   </head>
 
-  <body onload="slideIn()">
+  <body>
     <header>
       <nav>
         <figure>
-          <a href="index.html"
-            ><img src="img/Logo header@2x.png" alt="logo Adminika"
+          <a href="index.php"
+            ><img src="img/logo_white-removebg-preview.png" alt="logo Adminika"
           /></a>
         </figure>
         <ul class="menu">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="origin.html">ORIGEN</a></li>
-          <li><a href="manifest.html">MANIFIESTO</a></li>
-          <li class="active"><a href="founders.html">LIDERES</a></li>
-          <li><a href="services.html">SERVICIOS</a></li>
-          <li><a href="contact.html">CONTACTO</a></li>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="origin.php">ORIGEN</a></li>
+          <li><a href="manifest.php">MANIFIESTO</a></li>
+          <li class="active"><a href="founders.php">LIDERES</a></li>
+          <li><a href="services.php">SERVICIOS</a></li>
+          <li><a href="contact.php">CONTACTO</a></li>
         </ul>
         <i class="fa-solid fa-bars burguer-menu"></i>
       </nav>
     </header>
     <main>
       <div class="container founders">
-        <a href="services.html" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+        <a href="services.php" class="next"><i class="fa-solid fa-chevron-right"></i></a>
         <div class="content">
             <div class="data">
                 <p><strong>CAROLINA MEDRANO.</strong></p>

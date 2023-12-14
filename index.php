@@ -21,12 +21,12 @@
     <header class="main">
       <nav>
         <ul class="menu">
-          <li class="active"><a href="index.html">HOME</a></li>
-          <li><a href="origin.html">ORIGEN</a></li>
-          <li><a href="manifest.html">MANIFIESTO</a></li>
-          <li><a href="founders.html">LIDERES</a></li>
-          <li><a href="services.html">SERVICIOS</a></li>
-          <li><a href="contact.html">CONTACTO</a></li>
+          <li class="active"><a href="index.php">HOME</a></li>
+          <li><a href="origin.php">ORIGEN</a></li>
+          <li><a href="manifest.php">MANIFIESTO</a></li>
+          <li><a href="founders.php">LIDERES</a></li>
+          <li><a href="services.php">SERVICIOS</a></li>
+          <li><a href="contact.php">CONTACTO</a></li>
         </ul>
         <i class="fa-solid fa-bars burguer-menu"></i>
       </nav>
@@ -43,13 +43,13 @@
           </figure>
           <div class="content__bottom">
             <div class="socials">
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/adminika_mx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61550882763491&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
             <h2>Smartest Choice</h2>
           </div>
         </div>
-        <a href="origin.html" class="next"
+        <a href="origin.php" class="next"
           ><i class="fa-solid fa-chevron-right"></i
         ></a>
       </div>
