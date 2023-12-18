@@ -25,7 +25,8 @@ main {
 }
 
 h1,h2,h3,h4,h5 {
-    font-family: Gabriel Sans, sans-serif;
+    /* font-family: Gabriel Sans, sans-serif;   */
+    font-family: sans-serif;
 }
 
 p,a,i,li {
@@ -77,6 +78,7 @@ header figure {
 header figure img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 header nav {
@@ -88,6 +90,7 @@ header nav {
     flex-wrap: nowrap;
     position: relative;
     background-color: var(--creme);
+    padding: 0 8rem;
 }
 
 header.main nav {
@@ -575,8 +578,9 @@ header.main nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 1000;
     display: none;
+    /* position: sticky; */
 }
 
 .wrapper .full__service .content {
@@ -648,6 +652,7 @@ header.main nav a {
 .full__service .bottom p {
     width: 45rem;
     margin: 1rem 0;
+    max-width: 90vw;
 }
 
 .full__service .content h3 {
@@ -658,6 +663,20 @@ header.main nav a {
 .full__service .content span {
     color: #494848;
     border-color: #494848;
+}
+
+.full__service .close {
+    font-size: 3rem;
+    font-weight: 700;
+    color: crimson;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: none;
+}
+.full__service .close:hover {
+    cursor: pointer;
+    color: red;
 }
 
 /* .service:hover {
@@ -867,7 +886,10 @@ button {
 }
 
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:900px) {
+    header nav {
+        padding: 0;
+    }
     .next {
         top: 25%;
     }
@@ -963,5 +985,9 @@ button {
 
     .wrapper .full__service .content {
         margin-left: 50%;
+    }
+
+    form {
+        margin: 0 auto;
     }
 }

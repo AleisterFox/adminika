@@ -19,7 +19,7 @@
   <header>
     <nav>
       <figure>
-        <a href="index.php"><img src="img/logo_white-removebg-preview.png" alt="logo Adminika" /></a>
+        <a href="index.php"><img src="img/Logo header@2x.png" alt="logo Adminika" /></a>
       </figure>
       <ul class="menu">
         <li><a href="index.php">HOME</a></li>
@@ -39,16 +39,16 @@
       <div class="wrapper">
 
         <div class="service adm">
-          <a href="contact.php">
+          <a>
             <figure><img src="img/administracion.jpg" alt="" /></figure>
             <div class="content">
               <span>1</span>
-              <h3>Administracion</h3>
+              <h3>Administración</h3>
             </div>
           </a>
         </div>
         <div class="service mtn">
-          <a href="contact.php">
+          <a>
             <figure><img src="img/mantenimiento.jpg" alt="" /></figure>
             <div class="content">
               <span>2</span>
@@ -57,7 +57,7 @@
           </a>
         </div>
         <div class="service lgl">
-          <a href="contact.php">
+          <a>
             <figure><img src="img/legales.jpg" alt="" /></figure>
             <div class="content">
               <span>3</span>
@@ -66,7 +66,7 @@
           </a>
         </div>
         <div class="service ads">
-          <a href="contact.php">
+          <a>
             <figure><img src="img/adicionales.jpg" alt="" /></figure>
             <div class="content">
               <span>4</span>
@@ -76,14 +76,15 @@
         </div>
 
         <div class="full__service adm">
+          <p class="close">X</p>
           <div class="content">
             <span>1</span>
-            <h3>Administracion</h3>
+            <h3>Administración</h3>
           </div>
           <div class="bottom">
             <div class="left">
               <p>
-                - Bienvenida a condominios
+                - Bienvenida a condóminos
               </p>
               <p>
                 - Implementación de sistema de cobro
@@ -106,13 +107,14 @@
                 - Control y gestión de accesos y estacionamientos
               </p>
               <p>
-                - Manejo de incidencias entre condominios
+                - Manejo de incidencias entre condóminos
               </p>
             </div>
           </div>
         </div>
 
         <div class="full__service mtn">
+          <p class="close">X</p>
           <div class="content">
             <span>2</span>
             <h3>Mantenimiento</h3>
@@ -141,6 +143,7 @@
         </div>
 
         <div class="full__service lgl">
+          <p class="close">X</p>
           <div class="content">
             <span>3</span>
             <h3>Legales</h3>
@@ -172,6 +175,7 @@
         </div>
 
         <div class="full__service ads">
+          <p class="close">X</p>
           <div class="content">
             <span>4</span>
             <h3>Adicionales</h3>
@@ -182,7 +186,7 @@
                 - Integración de consejo de vigilancia
               </p>
               <p>
-                - Inactivacion de comunidades
+                - Activación de comunidades
               </p>
             </div>
             <div class="right">

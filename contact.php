@@ -19,7 +19,7 @@
   <header>
     <nav>
       <figure>
-        <a href="index.php"><img src="img/logo_white-removebg-preview.png" alt="logo Adminika" /></a>
+        <a href="index.php"><img src="img/Logo header@2x.png" alt="logo Adminika" /></a>
       </figure>
       <ul class="menu">
         <li><a href="index.php">HOME</a></li>
@@ -66,7 +66,7 @@
             <img src="img/partners.png" alt="Logo Administradores México">
           </figure>
         </div>
-        <a href="">TERMINOS Y CONDICIONES</a>
+        <a href="">TÉRMINOS Y CONDICIONES</a>
         <a href="">AVISO DE PRIVACIDAD</a>
         <a href="">DERECHOS RESERVADOS 2023</a>
       </div>

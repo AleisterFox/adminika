@@ -19,7 +19,7 @@
   <header>
     <nav>
       <figure>
-        <a href="index.php"><img src="img/logo_white-removebg-preview.png" alt="logo Adminika" /></a>
+        <a href="index.php"><img src="img/Logo header@2x.png" alt="logo Adminika" /></a>
       </figure>
       <ul class="menu">
         <li><a href="index.php">HOME</a></li>
@@ -65,7 +65,7 @@
       <div class="right">
         <a href="manifest.php" class="next"><i class="fa-solid fa-chevron-right"></i></a>
         <div class="content">
-          <h3>MISION</h3>
+          <h3>MISIÓN</h3>
           <p>
             <strong>Contribuir</strong> con el desarrollo de la comunidad,
             empleando las mejores prácticas de administración inmobiliaria a
@@ -75,7 +75,7 @@
           </p>
         </div>
         <div class="content">
-          <h3>VISION</h3>
+          <h3>VISIÓN</h3>
           <p>
             Consolidarnos como la <strong>empresa</strong> de Administración
             inmobiliaria
