@@ -49,7 +49,7 @@
         </ul>
         <ul>
           <li>
-            La fuerza mas poderosa del universo <br />
+            La fuerza mas poderosa del universo
             es la voluntad<span>7</span>
           </li>
           <li>

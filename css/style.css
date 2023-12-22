@@ -21,15 +21,15 @@ html {
 }
 
 main {
-    width: 100vw;   
+    width: 100vw;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
     /* font-family: Gabriel Sans, sans-serif;   */
     font-family: sans-serif;
 }
 
-p,a,i,li {
+p, a, i, li {
     font-family: Poppins;
 }
 
@@ -421,6 +421,7 @@ header.main nav a {
 .why .reason::after {
     content: "";
     width: 110%;
+    max-width: 100vw;
     height: 100%;
     position: absolute;
     top: 0;
@@ -436,6 +437,7 @@ header.main nav a {
 .why .reason p {
     position: absolute;
     z-index: 1;
+    text-align: justify;
 }
 
 /* FOUNDERS*/
@@ -466,7 +468,7 @@ header.main nav a {
     padding: 0 15rem;
     align-items: flex-start;
     margin-top: 20%;
-    height:25rem;
+    height: 25rem;
 }
 
 .container.founders .data {
@@ -537,10 +539,11 @@ header.main nav a {
 
 .wrapper .content {
     width: fit-content;
+    min-width: 26rem;
     display: flex;
     height: 8rem;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(100%);
@@ -628,14 +631,14 @@ header.main nav a {
     background: url('../img/legales.jpg');
 }
 
-.full__service.ads::after{
+.full__service.ads::after {
     background: url('../img/adicionales.jpg');
 }
 
 .full__service .content {
     margin-left: 10%;
     margin-top: 5%;
-    
+
 }
 
 .full__service .bottom {
@@ -668,15 +671,16 @@ header.main nav a {
 .full__service .close {
     font-size: 3rem;
     font-weight: 700;
-    color: crimson;
+    color: var(--gold);
     position: absolute;
     top: 3rem;
     right: 3rem;
     display: none;
 }
+
 .full__service .close:hover {
     cursor: pointer;
-    color: red;
+    color: var(--light-gold);
 }
 
 /* .service:hover {
@@ -755,6 +759,7 @@ input, textarea {
 
 ::placeholder {
     color: white;
+    font-family: Poppins;
 }
 
 button {
@@ -890,9 +895,11 @@ button {
     header nav {
         padding: 0;
     }
+
     .next {
         top: 25%;
     }
+
     .burguer-menu {
         display: block;
         color: black;
@@ -904,6 +911,7 @@ button {
         color: white;
         margin: 0;
     }
+
     .menu {
         flex-direction: column;
         position: absolute;
@@ -913,17 +921,19 @@ button {
         padding: 2rem 0;
         display: none;
     }
+
     header.main .menu {
         background-color: rgba(0, 0, 0, 0.75);
-       
+
     }
-    
+
     header figure {
         width: 25rem;
     }
 
     .container.origin .left {
         padding: 2rem;
+        padding-top: 5rem;
         height: fit-content;
     }
 
@@ -955,13 +965,24 @@ button {
         row-gap: 2rem;
     }
 
+    .container.founders{
+        overflow: hidden;
+        height: 95vh;
+    }
+
+    .container.founders::after {
+        background: url('../img/foundersMovil.jpg') no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+
     .container.founders .content {
         padding: 0 1rem;
         position: absolute;
         bottom: 10%;
     }
 
-    .container.founders .data  {
+    .container.founders .data {
         width: fit-content;
     }
 

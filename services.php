@@ -76,7 +76,7 @@
         </div>
 
         <div class="full__service adm">
-          <p class="close">X</p>
+          <p class="close"><i class="fa-solid fa-chevron-left"></i></p>
           <div class="content">
             <span>1</span>
             <h3>Administración</h3>
@@ -114,7 +114,7 @@
         </div>
 
         <div class="full__service mtn">
-          <p class="close">X</p>
+          <p class="close"><i class="fa-solid fa-chevron-left"></i></p>
           <div class="content">
             <span>2</span>
             <h3>Mantenimiento</h3>
@@ -143,7 +143,7 @@
         </div>
 
         <div class="full__service lgl">
-          <p class="close">X</p>
+          <p class="close"><i class="fa-solid fa-chevron-left"></i></p>
           <div class="content">
             <span>3</span>
             <h3>Legales</h3>
@@ -175,7 +175,7 @@
         </div>
 
         <div class="full__service ads">
-          <p class="close">X</p>
+          <p class="close"><i class="fa-solid fa-chevron-left"></i></p>
           <div class="content">
             <span>4</span>
             <h3>Adicionales</h3>

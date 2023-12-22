@@ -46,8 +46,8 @@
           </h2>
           <p>
             <strong>ADMINIKA</strong> es una empresa que nace en Baja
-            California, Méx. Dedicada a la administración de Torres
-            Residenciales, Médicas y Corporativas, cuyo proposito es
+            California, México, dedicada a la administración de Torres
+            Residenciales, Médicas y Corporativas, cuyo propósito es
             revolucionar el modelo actual de administración en el país,
             incorporando la tecnología como principal aliado.
           </p>
