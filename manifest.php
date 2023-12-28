@@ -82,7 +82,7 @@
           <div class="reason">
             <p>
               <strong>Atención personalizada 24/7</strong>
-              Atendiendo incidencias, quejas y requerimientos de condominios
+              Atendiendo incidencias, quejas y requerimientos de condóminos
             </p>
           </div>
         </div>

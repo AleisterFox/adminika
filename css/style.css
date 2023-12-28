@@ -203,8 +203,9 @@ header.main nav a {
 
 .content__bottom h2 {
     font-size: 4rem;
-    margin-left: 50%;
+    margin-left: calc(50% - 3rem);
     transform: translateX(-50%);
+    text-align: center;
 }
 
 .socials {
@@ -931,6 +932,26 @@ button {
         width: 25rem;
     }
 
+    .container.video .content {
+        padding: 0 2rem;
+    }
+
+    .content__bottom h2 {
+        margin-left: 0;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+
+    .content__bottom {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .content__bottom .socials {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
     .container.origin .left {
         padding: 2rem;
         padding-top: 5rem;
@@ -992,7 +1013,12 @@ button {
     }
 
     .top {
-        padding-left: 1rem;
+        padding: 0 1rem;
+        max-width: calc(100vw - 2rem);
+    }
+
+    .container.contact .top .right {
+        max-width: 100%;
     }
 
     .container.contact .bottom {
@@ -1000,7 +1026,7 @@ button {
     }
 
     .container.contact .bottom>a {
-        font-size: 1.8rem;
+        /* font-size: 1.8rem; */
         margin: 1rem 0rem;
     }
 
@@ -1009,6 +1035,11 @@ button {
     }
 
     form {
-        margin: 0 auto;
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .socials {
+        flex-direction: row;
     }
 }
