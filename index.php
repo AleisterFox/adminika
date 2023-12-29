@@ -39,7 +39,7 @@
         </video>
         <div class="content">
           <figure>
-            <img src="img/Logo home@2x.png" alt="" />
+            <img src="img/mainLogo.png" alt="" />
           </figure>
           <div class="content__bottom">
             <div class="socials">
