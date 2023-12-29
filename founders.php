@@ -38,13 +38,13 @@
       <div class="content">
         <div class="data">
           <p><strong>CAROLINA MEDRANO.</strong></p>
-          <p>CEO CO-FUNDER</p>
+          <p>CEO FOUNDER</p>
           <p>DIRECTORA GENERAL</p>
         </div>
 
         <div class="data">
           <p><strong>SHERLIN MORALES</strong></p>
-          <p>COO CO-FUNDER</p>
+          <p>COO CO-FOUNDER</p>
           <p>DIRECTORA OPERATIVA</p>
         </div>
       </div>
