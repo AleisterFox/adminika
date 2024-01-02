@@ -21,7 +21,7 @@
     <header class="main">
       <nav>
         <ul class="menu">
-          <li class="active"><a href="index.php">HOME</a></li>
+          <li class="active"><a href="index.php">INICIO</a></li>
           <li><a href="origin.php">ORIGEN</a></li>
           <li><a href="manifest.php">MANIFIESTO</a></li>
           <li><a href="founders.php">LIDERES</a></li>
