@@ -24,35 +24,38 @@
       <div class="box-3"></div>
     </div>
   </div>
-  <header class="main">
-    <nav>
-      <ul class="menu">
-        <li class="active"><a href="index.php">HOME</a></li>
-        <li><a href="origin.php">ORIGEN</a></li>
-        <li><a href="manifest.php">MANIFIESTO</a></li>
-        <li><a href="founders.php">LIDERES</a></li>
-        <li><a href="services.php">SERVICIOS</a></li>
-        <li><a href="contact.php">CONTACTO</a></li>
-      </ul>
-      <i class="fa-solid fa-bars burguer-menu"></i>
-    </nav>
-  </header>
-  <main>
-    <div class="container video" style="overflow: hidden; height: 100vh;">
-      <div class="fg"></div>
-      <video poster="img/video-portada.jpg">
-        <source src="img/home.mov" type="video/mp4" />
-      </video>
-      <div class="content">
-        <figure>
-          <img src="img/mainLogo.png" alt="" />
-        </figure>
-        <div class="content__bottom">
-          <div class="socials">
-            <a href="https://www.instagram.com/adminika_mx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61550882763491&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+  <body>
+    <header class="main">
+      <nav>
+        <ul class="menu">
+          <li class="active"><a href="index.php">INICIO</a></li>
+          <li><a href="origin.php">ORIGEN</a></li>
+          <li><a href="manifest.php">MANIFIESTO</a></li>
+          <li><a href="founders.php">LIDERES</a></li>
+          <li><a href="services.php">SERVICIOS</a></li>
+          <li><a href="contact.php">CONTACTO</a></li>
+        </ul>
+        <i class="fa-solid fa-bars burguer-menu"></i>
+      </nav>
+    </header>
+    <main>
+      <div class="container video" style="overflow: hidden; height: 100vh;">
+        <div class="fg"></div>
+        <video>
+          <source src="img/home.mov" type="video/mp4" />
+        </video>
+        <div class="content">
+          <figure>
+            <img src="img/mainLogo.png" alt="" />
+          </figure>
+          <div class="content__bottom">
+            <div class="socials">
+              <a href="https://www.instagram.com/adminika_mx/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61550882763491&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <h2>Smartest Choice</h2>
           </div>
-          <h2>Smartest Choice</h2>
         </div>
       </div>
       <a href="origin.php" class="next"><i class="fa-solid fa-chevron-right"></i></a>

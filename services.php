@@ -22,7 +22,7 @@
         <a href="index.php"><img src="img/Logo header@2x.png" alt="logo Adminika" /></a>
       </figure>
       <ul class="menu">
-        <li><a href="index.php">HOME</a></li>
+        <li><a href="index.php">INICIOO</a></li>
         <li><a href="origin.php">ORIGEN</a></li>
         <li><a href="manifest.php">MANIFIESTO</a></li>
         <li><a href="founders.php">LIDERES</a></li>
