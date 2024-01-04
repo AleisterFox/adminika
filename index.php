@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ADMINIKA es una empresa de administración de Torres Residenciales, Médicas y Corporativas que nació en Baja California, México. Nuestro objetivo es revolucionar el modelo actual de administración en el país, incorporando la tecnología como principal aliado">
   <link rel="shortcut icon" href="img/logo_white.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/loader.css">
   <link rel="stylesheet" href="css/animate.css" />
+  <link rel="shortcut icon" href="img/favicon-d.png" type="image/x-icon" color-scheme="dark">
+  <link rel="shortcut icon" href="img/favicon-l.png" type="image/x-icon" color-scheme="light">
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
