@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="loader__screen">
+  <div class="loader__screen" id="loader">
     <div class="loader">
       <div class="box-1"></div>
       <div class="box-2"></div>
@@ -42,7 +42,7 @@
     <main>
       <div class="container video" style="overflow: hidden; height: 100vh;">
         <div class="fg"></div>
-        <video>
+        <video poster="img/video-portada.jpg" preload>
           <source src="img/home.mov" type="video/mp4" />
         </video>
         <div class="content">
@@ -93,6 +93,7 @@
     });
   </script>
   <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/loader.js"></script>
 </body>
 
